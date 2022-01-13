@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController
 class SampleController {
     @GetMapping("/")
     fun getHello() :String {
-        return "test Hello World"
+        return "test2 Hello World"
     }
 }
