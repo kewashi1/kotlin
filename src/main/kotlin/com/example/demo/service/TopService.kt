@@ -55,8 +55,9 @@ class TopService {
         return res
     }
 
-    fun addFunctionForTest(){
-        
+    fun addFunctionForTest(): String{
+
+        return ""
     }
 
 }
