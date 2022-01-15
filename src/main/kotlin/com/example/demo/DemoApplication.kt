@@ -1,5 +1,6 @@
 package com.example.demo
 
+import com.example.demo.learn.Animal
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
