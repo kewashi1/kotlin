@@ -21,14 +21,14 @@ class TopService {
 //        println(user.name)
 //        println(user.address)
 
-        var user7 = User7(11, "user1")
-        println(user7.name)
-        println(user7.id)
-
-        var testUser7 = User7(11, "user2")
-
-        println(user7.name.equals(testUser7.name))
-        println(user7.id.equals(testUser7.id))
+//        var user7 = User7(11, "user1")
+//        println(user7.name)
+//        println(user7.id)
+//
+//        var testUser7 = User7(11, "user2")
+//
+//        println(user7.name.equals(testUser7.name))
+//        println(user7.id.equals(testUser7.id))
 
         return a
     }

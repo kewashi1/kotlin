@@ -1,5 +1,6 @@
 package com.example.demo
 
+import com.example.demo.service.TextService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -8,16 +9,17 @@ class SampleController {
     @GetMapping("/sample")
     fun getHello() :String {
 
-        println(sum(1,2));
+//        println(sum(1,2));
+//
+//        val array = arrayOf(1,2,3);
+//        for(item in array){
+//            println(item)
+//        }
+//
+//        var res = 5.test(6);
+//        println(res)
 
-        val array = arrayOf(1,2,3);
-        for(item in array){
-            println(item)
-        }
-
-        var res = 5.test(6);
-        println(res)
-
+        var textService: TextService = TextService()
 
 
         return "test Hello World"

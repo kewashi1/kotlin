@@ -1,7 +1,9 @@
 package com.example.demo
 
 import com.example.demo.learn.Animal
+import com.example.demo.learn.ConvertTest
 import com.example.demo.learn.Dog
+import com.example.demo.service.TextService
 import com.example.demo.service.TopService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
@@ -13,6 +15,8 @@ class TopController {
 
     @Autowired
     lateinit var topService: TopService;
+    @Autowired
+    lateinit var textService: TextService;
 
     @GetMapping("/")
     fun getTop(): String {
@@ -28,6 +32,14 @@ class TopController {
 //
 //        var result: String = topService.testIf(2)
 //        println(result)
+
+        textService.testSquare()
+        textService.testLet(null)
+        textService.testLet("ok")
+
+//        var conv = ConvertTest()
+//
+//        conv.testConverter()
 
         return res[0];
     }
