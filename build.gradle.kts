@@ -4,8 +4,8 @@ plugins {
 	id("org.springframework.boot") version "2.6.2"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
 	id("com.arenagod.gradle.MybatisGenerator") version "1.4"
-	kotlin("jvm") version "1.6.10"
-	kotlin("plugin.spring") version "1.6.10"
+	kotlin("jvm") version "1.4.0"
+	kotlin("plugin.spring") version "1.4.0"
 }
 
 group = "com.example"
@@ -30,11 +30,15 @@ dependencies {
 	implementation("org.mybatis:mybatis:3.5.6")
 	implementation("org.mybatis.dynamic-sql:mybatis-dynamic-sql:1.2.1")
 	implementation("mysql:mysql-connector-java:8.0.23")
+//	implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
+	implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9") //Kotlin coroutines用ライブラリ(async, await)
+//	implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9") //Kotlin coroutines用ライブラリ(async, await)
 	mybatisGenerator("org.mybatis.generator:mybatis-generator-core:1.4.0")
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
 }
 
 tasks.withType<KotlinCompile> {
