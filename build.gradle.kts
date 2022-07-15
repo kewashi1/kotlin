@@ -4,8 +4,8 @@ plugins {
 	id("org.springframework.boot") version "2.6.2"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
 	id("com.arenagod.gradle.MybatisGenerator") version "1.4"
-	kotlin("jvm") version "1.4.0"
-	kotlin("plugin.spring") version "1.4.0"
+	kotlin("jvm") version "1.4.30"
+	kotlin("plugin.spring") version "1.4.30"
 }
 
 group = "com.example"
