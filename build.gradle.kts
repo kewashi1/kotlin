@@ -52,6 +52,10 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
+tasks.withType<Wrapper> {
+	gradleVersion = "7.1"
+}
+
 mybatisGenerator{
 	verbose = true
 	configFile = "${projectDir}/src/main/resources/generatorConfig.xml"
