@@ -11,4 +11,4 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
       - name: Test with Gradle
-        run: ./gradlew test
+        run: ./gradle test
